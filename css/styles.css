@@ -387,6 +387,7 @@ img {
 }
 .appeal {
   margin-top: 12px;
+  margin-right: 93px;
 }
 .appeal .title {
   display: inline-block;
@@ -404,6 +405,61 @@ img {
   margin-right: 10px;
 }
 .network-link .footer-icon {
+  fill: var(--white-color);
+}
+.footer-form {
+  margin-top: 12px;
+}
+.footer .form-title {
+  display: block;
+  text-transform: uppercase;
+  line-height: 1.14;
+  font-size: 14px;
+  font-weight: 700;
+}
+.footer-input {
+  display: inline-block;
+  line-height: 1.25;
+  width: 358px;
+  height: 50px;
+  padding: 15px 0px 15px 16px;
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: #2f303a;
+  color: rgba(255, 255, 255, 0.6);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-input:focus,
+.footer-input:hover {
+  border: 1px solid #2196f3;
+}
+.footer-form-btn {
+  display: inline-block;
+  text-align: center;
+  width: 200px;
+  height: 50px;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  line-height: 1.875;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-color: transparent;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.footer-form-btn:hover,
+.footer-form-btn:focus {
+  background-color: #188ce8;
+}
+.footer-btn-icon {
+  margin-left: 10px;
+  vertical-align: middle;
   fill: var(--white-color);
 }
 /* Portfolio page styles */
@@ -530,8 +586,6 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 528px;
-  height: 581px;
   background: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -555,4 +609,182 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   cursor: pointer;
+}
+.close-btn-icon {
+  fill: var(--primary-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-btn:hover .close-btn-icon,
+.modal-btn:focus .close-btn-icon {
+  fill: var(--accent-color);
+}
+.modal-form {
+  width: 528px;
+  padding: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.modal-form input,
+.modal-form textarea {
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-form input:focus,
+.modal-form textarea:focus,
+.modal-form input:hover,
+.modal-form textarea:hover {
+  outline: transparent;
+  border: 1px solid #2196f3;
+}
+.modal .form-title {
+  font-weight: 700;
+  margin-bottom: 12px;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  line-height: 1.15;
+  color: #212121;
+}
+.form-field {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.form-field label {
+  margin: 0 0 4px 0;
+  padding: 0;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  color: var(--light-gray-color);
+}
+.form-field input {
+  height: 40px;
+  padding-left: 42px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+  color: var(--primary-color);
+}
+.for-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  transform: translateY(100%);
+  margin-left: 12px;
+  margin-top: 11px;
+}
+.input-icon {
+  fill: var(--primary-color);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-field input:focus + .for-icon > .input-icon,
+.form-field input:hover + .for-icon > .input-icon {
+  fill: var(--accent-color);
+}
+textarea {
+  resize: none;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  cursor: pointer;
+}
+textarea::placeholder {
+  color: rgba(117, 117, 117, 0.5);
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+}
+.form-policy {
+  width: 100%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--light-gray-color);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.form-policy input {
+  margin-right: 8px;
+}
+.form-policy .checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+/* .form-policy .checkbox-label::before {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  border: 2px solid var(--primary-color);
+  border-radius: 2px;
+  vertical-align: middle;
+  margin-right: 7px;
+} */
+.checkbox-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid var(--primary-color);
+  border-radius: 2px;
+  margin-right: 7px;
+}
+.checkbox-icon .icon {
+  fill: transparent;
+}
+.checkbox:checked + .checkbox-icon {
+  background-color: var(--accent-color);
+  border: 2px solid var(--accent-color);
+  border-radius: 2px;
+}
+.checkbox:checked + .checkbox-icon > .icon {
+  fill: var(--white-color);
+}
+/* .checkbox:hover + .checkbox-icon > .icon {
+  position: absolute;
+  fill: var(--white-color);
+  background-color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+  border-radius: 2px;
+}  */
+/* .checkbox:checked + .checkbox-label::before {
+  content: "";
+  background-image: url(../images/check.svg);
+  background-size: contain;
+  background-origin: border-box;
+  background-color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+} */
+.modal-submit-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 50px;
+  font-weight: 700;
+  font-size: inherit;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: inherit;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-submit-btn:hover,
+.modal-submit-btn:focus {
+  background-color: #188ce8;
 }
